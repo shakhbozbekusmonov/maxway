@@ -104,3 +104,160 @@ img{
     padding-left: 20px;
 }
 
+ul{
+    padding-left: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/**************** HEADER STYLES START ***************/
+.header-top{
+    background-image: linear-gradient(to right, #fff 60%, #800A7A 40%);
+}
+
+@media (max-width: 720px) {
+    .header-top{
+        text-align: center;
+        background-image: linear-gradient(to top, #800A7A 60%,  #fff 40%);
+    }
+}
+
+.site-header{
+    padding-top: 23px;
+    padding-bottom: 60px;
+}
+
+.site-header__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header__start{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+@media (max-width: 720px) {
+    .site-header__start{
+        display: none;
+    }
+}
+
+.site-nav__list{
+    display: flex;
+}
+
+.site-nav__item{
+    margin-right: 40px;
+}
+
+.site-nav__item:last-child{
+    margin-right: 0;
+}
+
+.site-nav__link{
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--main-text-color);
+}
+
+.site-nav__link:hover{
+    color: var(--main-btn-color);
+    text-decoration: none;
+}
+
+.site-header__end{
+    width: 40%;
+    padding-left: 110px;
+}
+
+@media (max-width: 720px) {
+    .site-header__end{
+        display: none;
+    }
+}
+
+.site-header__phone-number{
+    position: relative;
+    display: inline-block;
+    margin-right: 45px;
+    padding-right: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    border-right: 1px solid var(--main-bg-color);
+    color: var(--main-bg-color);
+}
+
+.site-header__phone-number:hover{
+    color: var(--main-bg-color);
+    text-decoration: none;
+}
+
+.site-header__phone-number::before{
+    position: absolute;
+    right: 115%;
+    top: 30%;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-image: url("../images/icons/phone.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.phone-number__kod{
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.site-header__korzina{
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--main-bg-color);
+}
+
+.site-header__korzina::before{
+    position: absolute;
+    right: 115%;
+    top: 30%;
+    display: block;
+    width: 18px;
+    height: 21px;
+    background-image: url("../images/icons/korzina.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    content: "";
+}
+
+.site-header__korzina:hover{
+    color: var(--main-bg-color);
+    text-decoration: none;
+}
+
+.korzina-text{
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+@media (max-width: 720px) {
+    .site-header__phone-number, .site-header__korzina{
+        color: #222124;
+    }
+}
+/**************** HEADER STYLES END ***************/
