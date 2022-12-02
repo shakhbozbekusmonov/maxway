@@ -72,6 +72,7 @@ body{
     flex-direction: column;
     height: 100%;
     margin: 0;
+    overflow-x: hidden;
     font-family: "Inter", "Arial", sans-serif;
     font-weight: 400;
     background-color: #fff;
@@ -115,6 +116,7 @@ a{
 
 /**************** HEADER STYLES START ***************/
 .header-top{
+    width: 100%;
     background-image: linear-gradient(to right, #fff 60%, #800A7A 40%);
 }
 
@@ -127,7 +129,7 @@ a{
 
 .site-header{
     padding-top: 23px;
-    padding-bottom: 60px;
+    padding-bottom: 23px;
 }
 
 .site-header__wrapper{
@@ -261,3 +263,214 @@ a{
     }
 }
 /**************** HEADER STYLES END ***************/
+
+/**************** HERO STYLES START ***************/
+.hero-section{
+    padding-top: 103px;
+    /* background-color: var(--main-bg-color); */
+}
+
+@media (max-width: 767px) {
+    .hero-section{
+        padding-top: 0;
+    }
+}
+
+.hero-section__wrapper{
+    position: relative;
+    display: flex;
+}
+
+@media (max-width: 767px) {
+    .hero-section__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.hero-section__start{
+    width: 551px;
+}
+
+.hero-section__info--title{
+    width: 434px;
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 85px;
+    color: var(--main-text-color);
+}
+
+.hero-section__info--desc{
+    width: 397px;
+    margin-top: 0;
+    margin-bottom: 66px;
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--main-text-color);    
+}
+
+.hero-section__box--list{
+    display: flex;
+    justify-content: space-between;
+    width: 551px;
+    margin: 0;
+}
+
+.hero-section__box--item{
+    position: relative;
+    width: 255px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 31px;
+    border-radius: 12px;
+}
+
+.box--item__pizza{
+    background-image: linear-gradient(315.49deg, #FFC85C 1.32%, #F1B301 96.68%);
+}
+
+.box--item__kombo{
+    background-color: var(--header-bg-right-color);
+}
+
+.hero-section__box--link{
+    display: inline-block;
+    margin-bottom: 56px;
+    padding: 11px 23px 10px 53px;
+    background-image: url("../images/icons/fire.svg");
+    background-repeat: no-repeat;
+    background-position: 22px center;
+    background-color: #ffffff34;
+    border-radius: 19px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    white-space: nowrap;
+    color: var(--main-bg-color);
+}
+
+.box--link__kombo{
+    background-image: url("../images/icons/rocket.svg");
+}
+
+.hero-section__box--link:hover{
+    text-decoration: none;
+    color: var(--main-bg-color);
+}
+
+.hero-section__box--title{
+    margin: 0;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 32px;
+    color: #E76A06;
+}
+
+.hero-section__box--text{
+    display: block;
+    margin-left: 15px;
+}
+
+.box--title__kombo{
+    color: #FC96F7;
+}
+
+.box--text__kombo{
+    margin-left: 25px;
+}
+
+.hero-section__box--img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-bottom-right-radius: 12px;
+}
+
+
+.hero-section__end--img{
+    position: absolute;
+    right: calc(50% - 700px);
+    bottom: 2%;
+}
+
+@media (max-width: 767px) {
+    .hero-section__end--img{
+        display: none;
+    }
+}
+
+
+/* MOBILE STYLES START */
+@media (max-width: 767px) {
+    .hero-section__start{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-section__info--title{
+        width: 100%;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 44px;
+        color: var(--main-bg-color);
+    }
+    .hero-section__info--desc{
+        width: 100%;
+        font-size: 16px;
+        line-height: 19px;
+        color: var(--main-bg-color);
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-section__box--list{
+        display: none;
+    }
+}
+
+.hero-section__box--list__mobile{
+    display: none;
+    width: 100%;
+    margin-left: 16px;
+    overflow-x: scroll;
+}
+
+@media (max-width: 767px) {
+    .hero-section__box--list__mobile{
+        display: flex;
+        width: 100%;
+        margin-top: 23px;
+    }
+
+    .box--item__pizza{
+        width: 255px;
+        height: 200px;
+        padding-right: 105px;
+        margin-left: 20px;
+    }
+
+    .box--item__kombo{
+        width: 255px;
+        height: 200px;
+        margin-left: 30px;
+        padding-right: 61px;
+    }
+}
+
+.hero-section__img{
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .hero-section__img{
+        display: block;
+    }
+}
+/* MOBILE STYLES END */
+
+/**************** HERO STYLES END ***************/
