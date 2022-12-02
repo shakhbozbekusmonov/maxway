@@ -117,6 +117,7 @@ a{
 /**************** HEADER STYLES START ***************/
 .header-top{
     width: 100%;
+    margin-bottom: 80px;
     background-image: linear-gradient(to right, #fff 60%, #800A7A 40%);
 }
 
@@ -446,14 +447,14 @@ a{
         width: 100%;
         margin-top: 23px;
     }
-
+    
     .box--item__pizza{
         width: 255px;
         height: 200px;
         padding-right: 105px;
         margin-left: 20px;
     }
-
+    
     .box--item__kombo{
         width: 255px;
         height: 200px;
@@ -474,3 +475,67 @@ a{
 /* MOBILE STYLES END */
 
 /**************** HERO STYLES END ***************/
+
+/**************** MAIN STYLES START ***************/
+.site-main{
+    background-color: var(--main-bg-color);
+}
+
+/* PRODUCTS STYLES START */
+.nav-pills{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 40px;
+    border-top: 1px solid #97979750;
+}
+
+.nav-item .active{
+    background-color: var(--main-btn-color)!important;
+    border-radius: 27px;
+}
+
+.nav-link{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--main-text-color);
+}
+
+.btn-secondary{
+    padding-top: 15px;
+    padding-right: 44px;
+    padding-bottom: 15px;
+    padding-left: 80px;
+    background-image: url("../images/icons/filter.svg");
+    background-repeat: no-repeat;
+    background-position: 45px center;
+    background-color: #F5F5F5;
+    color: var(--main-text-color);
+    border: none;
+    border-radius: 27px;
+}
+
+.btn-secondary:hover{
+    background-color: #F5F5F5!important;
+    color: var(--main-text-color)!important;
+}
+
+.btn-secondary:focus{
+    background-color: #F5F5F5!important;
+    color: var(--main-text-color)!important;
+}
+
+.btn-secondary:active{
+    background-color: #F5F5F5!important;
+    color: var(--main-text-color)!important;
+}
+
+.nav-btn{
+    margin-left: 30px;
+}
+/* PRODUCTS STYLES END */
+/**************** MAIN STYLES END ***************/
+
+
