@@ -485,8 +485,10 @@ a{
 .nav-pills{
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
     width: 100%;
     padding-top: 40px;
+    overflow-x: auto;
     border-top: 1px solid #97979750;
 }
 
@@ -535,6 +537,110 @@ a{
 .nav-btn{
     margin-left: 30px;
 }
+
+/* PIZZA SECTION STYLES START */
+.pizza-section:first-child{
+    padding-top: 105px;
+    padding-bottom: 105px;
+}
+
+.pizza-section{
+    padding-bottom: 75px;
+}
+
+.fast-food-section__title{
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 63px;
+    color: var(--main-text-color);
+}
+
+.pizza-card{
+    display: flex;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    border: 1px solid #9797972e;
+    border-radius: 12px;
+}
+
+.pizza-card__start{
+    margin-right: 41px;
+}
+
+.pizza-card__img{
+    width: 180px;
+    height: 180px;
+}
+
+.pizza-card__circle{
+    position: absolute;
+    padding: 9px 13px 17px;
+    background: rgba(255, 255, 255, 0.249235);
+    box-shadow: 0px 7px 40px rgba(238, 39, 68, 0.355086);
+    backdrop-filter: blur(4.07742px);
+    border-radius: 50%;
+}
+
+.pizza-card__end{
+    width: 240px;
+}
+
+.pizza-card__title{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--main-text-color);
+}
+
+.pizza-card__title::after{
+    display: inline-block;
+    margin-left: 16px;
+}
+
+.pizza-title__gavaya::after{
+    content: url("../images/icons/cheese.svg");
+}
+
+.pizza-title__mexica::after{
+    content: url("../images/icons/papper.svg");
+}
+
+.pizza-title__achchiko::after{
+    content: url("../images/icons/leaf.svg");
+}
+
+.pizza-card__text{
+    margin-top: 0;
+    margin-bottom: 13px;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--main-text-color);
+    opacity: 0.4;
+}
+
+.pizza-card__price{
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--main-text-color);
+}
+
+.pizza-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--main-btn-color);
+    color: var(--main-bg-color);
+}
+/* PIZZA SECTION STYLES END */
 /* PRODUCTS STYLES END */
 /**************** MAIN STYLES END ***************/
 
